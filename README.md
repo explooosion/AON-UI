@@ -24,4 +24,4 @@ yarn build
 ```
 
 ## License
-AON-UI is MIT licensed. See [LICENSE](https://github.com/hyperapp/hyperapp/blob/master/LICENSE.md).
+AON-UI is BSD 2-Clause licensed. See [LICENSE](https://github.com/explooosion/AON-UI/blob/master/LICENSE).
