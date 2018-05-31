@@ -1,5 +1,5 @@
 # AON-UI
-🌈 AON UI Design build by [hyperapp](https://github.com/hyperapp/hyperapp).
+🌈 This is a AON UI Design for **Testing**.
 
 ## Installation
 
@@ -10,18 +10,20 @@ git clone https://github.com/explooosion/AON-UI.git
 ## Usage
 
 ```bash
-yarn install
+npm install
 ```
 
 ```bash
-yarn start
+npm start
 ```
 
 ## Build
 
 ```bash
-yarn build
+npm run build
 ```
+
+export dist/ to UI/
 
 ## License
 AON-UI is BSD 2-Clause licensed. See [LICENSE](https://github.com/explooosion/AON-UI/blob/master/LICENSE).
