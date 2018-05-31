@@ -1,0 +1,10 @@
+@import '~reset-css/reset';
+/** include reset */
+
+@import './scss/h.scss';
+/** include component */
+
+h1 {
+  margin-top: 2rem;
+  text-align: center;
+}
