@@ -8,7 +8,7 @@ import Player from './components/Player'
 const view = (state, actions) => (
   <div>
     <h1>Hello AON UI</h1>
-    <Player />
+    <Player props={state.player} />
   </div>
 )
 
