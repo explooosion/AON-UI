@@ -18,7 +18,7 @@ let actions = {}
  * Compose other models
  * @param {Object} models 
  */
-const compose = (models) => {
+const compose = models => {
   Object.keys(models).forEach(namespace => {
     state[namespace] = models[namespace].state
     actions[namespace] = models[namespace].actions
