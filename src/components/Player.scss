@@ -1,13 +1,35 @@
-.player-name {
-  margin-top: 2rem;
-  text-align: center;
-}
-
-p {
-  margin-left: 2rem;
-  font-size: 2rem;
-}
-
-button {
-  margin: 0 auto;
+.player {
+  .player-name {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  p {
+    margin-left: 2rem;
+    font-size: 2rem;
+  }
+  button {
+    margin: 0 auto;
+  }
+  .skill-group {
+    display: inline-block;
+    position: relative;
+    margin: 1rem;
+    width: 50px;
+    height: 60px;
+    .skill-up {
+      position: absolute;
+      top: 0;
+      width: inherit;
+      height: 10px;
+      background-image: url('/assets/up.png');
+      background-size: 100%;
+      cursor: pointer;
+    }
+    .skill-img {
+      position: absolute;
+      bottom: 0;
+      width: inherit;
+      height: 50px;
+    }
+  }
 }

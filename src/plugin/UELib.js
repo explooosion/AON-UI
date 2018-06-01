@@ -2,13 +2,12 @@ export default class UELib {
 
   constructor(actions) {
 
+    this.ue4 = null
     this.actions = actions
+
     if (typeof this.actions === 'undefined') return
 
-    this.ue4 = null
-
     if (typeof ue === 'object' && typeof ue.interface === 'object') {
-
       if (typeof ue.interface.broadcast !== 'function') return
 
       try {

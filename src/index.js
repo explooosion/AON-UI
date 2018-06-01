@@ -16,6 +16,7 @@ const view = (state, actions) => {
   const connect = model => ({
     state: state[model],
     actions: actions[model],
+    ue: uelib,
   })
 
   return (
