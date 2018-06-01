@@ -2,7 +2,6 @@ export default class UELib {
 
   constructor(actions) {
 
-    this.ue4 = null
     this.actions = actions
 
     if (typeof this.actions === 'undefined') return
@@ -21,7 +20,7 @@ export default class UELib {
             ue.interface.broadcast(name, '')
         }
 
-        this.ue4 = ue.interface.broadcast
+        // this.ue4 = ue.interface.broadcast
 
         ue.interface.setFPS = (fps) => {
           this.FPS = fps.toFixed(1)
@@ -45,5 +44,18 @@ export default class UELib {
   // setCurrentHero(val) {
   //   this.actions.player.update(val)
   // }
+
+  ue4(name, data) {
+    try {
+      if (typeof data !== 'undefined') {
+        ue.interface.broadcast(name, JSON.stringify(data))
+      }
+      else {
+        ue.interface.broadcast(name, '')
+      }
+    } catch (e) {
+      alert(e)
+    }
+  }
 
 }

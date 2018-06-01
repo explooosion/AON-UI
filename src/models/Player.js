@@ -46,13 +46,7 @@ const Player = {
       }))
     },
     skillLevelUp: (ue) => {
-      alert(ue)
-      try {
-        console.log(ue)
-        ue.ue4('skillupimg1', {})
-      } catch (e) {
-        alert(e)
-      }
+      ue.ue4('skillupimg1', {})
     }
   }
 }
