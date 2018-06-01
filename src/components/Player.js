@@ -2,7 +2,7 @@ import { h, app } from 'hyperapp'
 import './Player.scss'
 
 const Player = ({ props }) => {
-  const { state, actions, ue } = props
+  const { state, actions, ueapi } = props
   return (
     <div class="player">
       <h3 class="player-name">{state.name}</h3>
@@ -17,7 +17,7 @@ const Player = ({ props }) => {
       <p>CurrentAttackRange:{state.CurrentAttackRange}</p>
       {state.skill.map(url => (
         <div class="skill-group can-select">
-          <button class="skill-up can-select" type="button" onclick={e => actions.skillLevelUp(ue)}></button>
+          <button class="skill-up can-select" type="button" onclick={e => actions.skillLevelUp(ueapi)}></button>
           <img class="skill-img" src={url} />
         </div>
       ))}

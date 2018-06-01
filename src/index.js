@@ -1,22 +1,24 @@
 import './index.scss'
 import { h, app } from 'hyperapp'
 import { state, actions } from './models/index'
-import UELib from './plugin/UELib'
+import UnrealAPI from './plugin/UnrealAPI'
 
 // import components
 import Player from './components/Player'
 import Status from './components/Status'
 
+let unrealapi
+
 const view = (state, actions) => {
 
   // create ue4 event emitter and handler
-  const uelib = new UELib(actions)
+  unrealapi = new UnrealAPI(actions)
 
   // connect models
   const connect = model => ({
     state: state[model],
     actions: actions[model],
-    ue: uelib,
+    ueapi: unrealapi,
   })
 
   return (

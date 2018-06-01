@@ -45,8 +45,8 @@ const Player = {
         buff: _buff,
       }))
     },
-    skillLevelUp: (ue) => {
-      ue.ue4('skillupimg1', {})
+    skillLevelUp: e => {
+      e.emit('skillupimg1', {})
     }
   }
 }
