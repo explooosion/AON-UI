@@ -1,6 +1,7 @@
 import { h } from 'hyperapp'
 
 import Player from './Player'
+import Status from './Status'
 
 /**
  * Add your models 
@@ -8,6 +9,7 @@ import Player from './Player'
  */
 const models = {
   player: Player,
+  status: Status,
 }
 
 let state = {}

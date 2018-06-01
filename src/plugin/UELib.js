@@ -3,12 +3,13 @@ export default class UELib {
   constructor(actions) {
 
     this.actions = actions
+    if (typeof this.actions === 'undefined') return
 
     this.ue4 = null
 
     if (typeof ue === 'object' && typeof ue.interface === 'object') {
 
-      if (typeof ue.interface.broadcast != 'function') return
+      if (typeof ue.interface.broadcast !== 'function') return
 
       try {
 
@@ -29,7 +30,9 @@ export default class UELib {
 
         // simple way
         ue.interface.setCurrentHero = actions.player.update
+        ue.interface.setProgress = actions.status.update
 
+        // or bind event
         // ue.interface.setProgress = this.setProgress.bind(this)
         // ue.interface.hideProgress = this.hideProgress.bind(this)
         // ue.interface.setCurrentHero = this.setCurrentHero.bind(this)
