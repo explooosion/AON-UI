@@ -23,7 +23,6 @@ const view = (state, actions) => {
 
   return (
     <div>
-      <h1>Hello AON UI - Testing</h1>
       <Player props={connect('player')} />
       <Status props={connect('status')} />
     </div>

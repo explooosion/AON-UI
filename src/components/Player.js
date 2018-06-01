@@ -5,7 +5,6 @@ const Player = ({ props }) => {
   const { state, actions, ueapi } = props
   return (
     <div class="player">
-      <h3 class="player-name">{state.name}</h3>
       <p>Testing Counter:{state.counter}<button class="can-select" type="button" onclick={() => actions.up()}>Send</button></p>
       <p>HeroName:{state.HeroName}</p>
       <p>CurrentMoveSpeed:{state.CurrentMoveSpeed}</p>
